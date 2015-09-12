@@ -2,17 +2,26 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 2em 0 3em;
   background-color: #eee;
   position: fixed;
   width: 100%;
   height: 4em;
   border-bottom: 1px solid #ddd;
+}
+
+#header-spacing {
+  height: 4em;
+  width: 100%;
 }
 
 #logo {
@@ -41,4 +50,64 @@ header {
 
 li.active {
   background-color: #dedede;
+}
+
+.hero {
+  height: 500px;
+  background-image: url('../images/hero.jpg');
+  background-size: auto 100%;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.section-info {
+  min-height: 500px;
+  padding: 1em 2em;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-info.blue-back {
+  background-color: aliceblue;
+}
+
+.chargebacks-text {
+  font-size: 2em;
+  font-weight: 100;
+  z-index: 2;
+}
+
+.simplified-text {
+  font-size: 3em;
+  z-index: 2;
+}
+
+.width-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  background-color: #eee;
+  color: #666;
+  text-align: center;
+  padding: 1em 2em;
 }
