@@ -49,6 +49,7 @@ li.active {
 }
 
 .hero {
+  padding-top: 4em;
   height: 500px;
   background-image: url('../images/hero.jpg');
   background-size: auto 100%;
