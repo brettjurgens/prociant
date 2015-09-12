@@ -48,7 +48,7 @@ li.active {
   background-color: #dedede;
 }
 
-.hero {
+.section-info.hero {
   padding-top: 4em;
   height: 500px;
   background-image: url('../images/hero.jpg');
